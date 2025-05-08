@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Denis Aggyratus Demitrus | Developer Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#179862',
+                        dark: '#121212',
+                        darker: '#0e0e0e',
+                        card: '#1e1e1e',
+                        border: '#2a2a2a',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-dark text-white font-sans">
+    <header class="min-h-screen flex items-center relative overflow-hidden bg-darker">
+        <div class="container mx-auto px-6 py-16 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 flex flex-col items-start justify-center">
+                <h1 class="text-5xl md:text-6xl font-bold mb-4 leading-tight">DENIS AGGYRATUS</h1>
+                <p class="text-xl text-gray-400 mb-8">Full Stack Developer & Flutter Specialist</p>
+                <div class="h-1 w-16 bg-primary mb-8 rounded"></div>
+                <p class="text-lg text-gray-300 mb-10 max-w-lg">
+                    With over 5 years of experience in cross-platform mobile development, I build high-quality,
+                    scalable applications that solve real-world problems. Specializing in Flutter, React,
+                    and backend technologies to create seamless user experiences.
+                </p>
+                <div class="flex flex-wrap gap-3">
+                    <a href="#projects"
+                        class="bg-primary text-white py-3 px-8 rounded-lg font-medium flex items-center justify-center hover:bg-opacity-90 transition duration-300 shadow-lg">
+                        View My Work
+                    </a>
+                    <a href="#contact"
+                        class="border-2 border-white border-opacity-20 text-white py-3 px-8 rounded-lg font-medium flex items-center justify-center hover:border-opacity-100 transition duration-300">
+                        Contact Me
+                    </a>
+                </div>
+            </div>
+            <div class="md:w-1/2 mt-10 md:mt-0">
+                <img src="./assests/image.png" alt="Developer coding"
+                    class="rounded-lg shadow-2xl w-full object-cover h-96 md:h-auto">
+            </div>
+        </div>
+
+        <!-- Scroll indicator -->
+        <div class="absolute bottom-10 left-0 right-0 mx-auto w-full flex justify-center">
+            <div class="flex flex-col items-center text-gray-400 text-sm uppercase tracking-widest animate-bounce">
+                <span>Scroll Down</span>
+                <svg width="20" height="12" viewBox="0 0 20 12" fill="none" class="mt-2"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 1L10 10L19 1" stroke="currentColor" stroke-width="2" />
+                </svg>
+            </div>
+        </div>
+    </header>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 bg-card relative">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-16 relative">
+                My Expertise
+                <span
+                    class="absolute bottom-0 left-1/2 transform -translate-x-1/2 -mb-6 w-16 h-1 bg-primary rounded"></span>
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
+                <div
+                    class="bg-dark rounded-xl p-8 border-l-4 border-primary shadow-xl transition-transform duration-300 hover:-translate-y-2">
+                    <div class="text-3xl mb-6">📱</div>
+                    <h3 class="text-xl font-semibold mb-4">Mobile Development</h3>
+                    <p class="text-gray-400">Expert in Flutter for cross-platform app development, creating beautiful
+                        and performant applications for iOS and Android from a single codebase.</p>
+                </div>
+                <div
+                    class="bg-dark rounded-xl p-8 border-l-4 border-primary shadow-xl transition-transform duration-300 hover:-translate-y-2">
+                    <div class="text-3xl mb-6">🌐</div>
+                    <h3 class="text-xl font-semibold mb-4">Web Development</h3>
+                    <p class="text-gray-400">Building modern, responsive web applications using React, TypeScript, and
+                        other cutting-edge technologies to create exceptional user experiences.</p>
+                </div>
+                <div
+                    class="bg-dark rounded-xl p-8 border-l-4 border-primary shadow-xl transition-transform duration-300 hover:-translate-y-2">
+                    <div class="text-3xl mb-6">⚙️</div>
+                    <h3 class="text-xl font-semibold mb-4">Backend Solutions</h3>
+                    <p class="text-gray-400">Creating robust backend systems with Firebase, Supabase, Node.js and SQL
+                        databases to power applications with reliable, scalable infrastructure.</p>
+                </div>
+                <div
+                    class="bg-dark rounded-xl p-8 border-l-4 border-primary shadow-xl transition-transform duration-300 hover:-translate-y-2">
+                    <div class="text-3xl mb-6">🔍</div>
+                    <h3 class="text-xl font-semibold mb-4">UI/UX Design</h3>
+                    <p class="text-gray-400">Designing intuitive and visually appealing user interfaces that focus on
+                        user experience and make applications both beautiful and functional.</p>
+                </div>
+                <div
+                    class="bg-dark rounded-xl p-8 border-l-4 border-primary shadow-xl transition-transform duration-300 hover:-translate-y-2">
+                    <div class="text-3xl mb-6">🛠️</div>
+                    <h3 class="text-xl font-semibold mb-4">DevOps</h3>
+                    <p class="text-gray-400">Managing deployment pipelines, CI/CD, and cloud infrastructure to ensure
+                        applications are deployed efficiently and maintained properly.</p>
+                </div>
+                <div
+                    class="bg-dark rounded-xl p-8 border-l-4 border-primary shadow-xl transition-transform duration-300 hover:-translate-y-2">
+                    <div class="text-3xl mb-6">🤝</div>
+                    <h3 class="text-xl font-semibold mb-4">Project Management</h3>
+                    <p class="text-gray-400">Leading development teams and coordinating project timelines to deliver
+                        high-quality solutions on schedule and within budget constraints.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-dark">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-16 relative">
+                Featured Projects
+                <span
+                    class="absolute bottom-0 left-1/2 transform -translate-x-1/2 -mb-6 w-16 h-1 bg-primary rounded"></span>
+            </h2>
+
+            <!-- Bite-Line Project -->
+            <div class="flex flex-col lg:flex-row items-center gap-12 mb-20">
+                <div class="lg:w-1/2">
+                    <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                        alt="Bite-Line Project" class="rounded-lg shadow-2xl w-full h-auto">
+                </div>
+                <div class="lg:w-1/2">
+                    <div class="text-primary text-lg font-medium mb-2">Flutter / Firebase / Supabase</div>
+                    <h3 class="text-3xl font-semibold mb-4">Bite-Line</h3>
+                    <p class="text-gray-300 mb-6">
+                        A food ordering application for the Ashesi community that eliminates long waiting times and
+                        streamlines the ordering process.
+                        Connects students with local food vendors, helping food vendors manage orders efficiently while
+                        providing students with
+                        a seamless ordering experience.
+                    </p>
+                    <div class="flex flex-wrap gap-3 mb-6">
+                        <span class="bg-card px-4 py-2 rounded-full text-sm">Cross-Platform</span>
+                        <span class="bg-card px-4 py-2 rounded-full text-sm">Real-time Updates</span>
+                        <span class="bg-card px-4 py-2 rounded-full text-sm">Secure Payments</span>
+                        <span class="bg-card px-4 py-2 rounded-full text-sm">Order Tracking</span>
+                    </div>
+                    <div class="flex gap-4">
+                        <a href="#"
+                            class="bg-primary text-white py-2 px-6 rounded-lg transition hover:bg-opacity-90">View
+                            Project</a>
+                        <a href="#"
+                            class="border border-primary text-primary py-2 px-6 rounded-lg transition hover:bg-primary hover:bg-opacity-10">GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MelodyMeet Project -->
+            <div class="flex flex-col lg:flex-row-reverse items-center gap-12 mb-20">
+                <div class="lg:w-1/2">
+                    <img src="https://images.unsplash.com/photo-1511379938547-c1f69419868d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                        alt="MelodyMeet Project" class="rounded-lg shadow-2xl w-full h-auto">
+                </div>
+                <div class="lg:w-1/2">
+                    <div class="text-primary text-lg font-medium mb-2">Flutter / Supabase / Riverpod</div>
+                    <h3 class="text-3xl font-semibold mb-4">MelodyMeet</h3>
+                    <p class="text-gray-300 mb-6">
+                        A Flutter-based music streaming app that reimagines artist-fan interaction through real-time,
+                        group video calls.
+                        Artists can host live listening sessions for new albums, receive instant feedback, and engage in
+                        meaningful conversations with fans.
+                        The platform fosters community engagement through multimedia discussions.
+                    </p>
+                    <div class="flex flex-wrap gap-3 mb-6">
+                        <span class="bg-card px-4 py-2 rounded-full text-sm">Video Calls</span>
+                        <span class="bg-card px-4 py-2 rounded-full text-sm">Audio Streaming</span>
+                        <span class="bg-card px-4 py-2 rounded-full text-sm">Social Features</span>
+                        <span class="bg-card px-4 py-2 rounded-full text-sm">Real-time Chat</span>
+                    </div>
+                    <div class="flex gap-4">
+                        <a href="#"
+                            class="bg-primary text-white py-2 px-6 rounded-lg transition hover:bg-opacity-90">View
+                            Project</a>
+                        <a href="https://github.com/WorldBuilder21/melody_meet"
+                            class="border border-primary text-primary py-2 px-6 rounded-lg transition hover:bg-primary hover:bg-opacity-10">GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Campus Connect Project -->
+            <div class="flex flex-col lg:flex-row items-center gap-12 mb-20">
+                <div class="lg:w-1/2">
+                    <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                        alt="Campus Connect Project" class="rounded-lg shadow-2xl w-full h-auto">
+                </div>
+                <div class="lg:w-1/2">
+                    <div class="text-primary text-lg font-medium mb-2">Flutter / Firebase / Google Maps API</div>
+                    <h3 class="text-3xl font-semibold mb-4">Campus Connect</h3>
+                    <p class="text-gray-300 mb-6">
+                        A comprehensive campus networking application that helps students connect with peers, discover
+                        campus events,
+                        find study groups, and navigate campus facilities. The app features real-time messaging, event
+                        calendars,
+                        campus maps, and a resource sharing platform.
+                    </p>
+                    <div class="flex flex-wrap gap-3 mb-6">
+                        <span class="bg-card px-4 py-2 rounded-full text-sm">Social Networking</span>
+                        <span class="bg-card px-4 py-2 rounded-full text-sm">Event Management</span>
+                        <span class="bg-card px-4 py-2 rounded-full text-sm">Mapping</span>
+                        <span class="bg-card px-4 py-2 rounded-full text-sm">Resource Sharing</span>
+                    </div>
+                    <div class="flex gap-4">
+                        <a href="#"
+                            class="bg-primary text-white py-2 px-6 rounded-lg transition hover:bg-opacity-90">View
+                            Project</a>
+                        <a href="https://github.com/WorldBuilder21/Campus_connect"
+                            class="border border-primary text-primary py-2 px-6 rounded-lg transition hover:bg-primary hover:bg-opacity-10">GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Additional Projects Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
+                <!-- UniShare Project -->
+                <div
+                    class="bg-card rounded-xl overflow-hidden shadow-xl transition-transform duration-300 hover:-translate-y-2">
+                    <img src="https://images.unsplash.com/photo-1464226184884-fa280b87c399?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                        alt="UniShare Project" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="text-primary text-sm font-medium mb-2">React / Node.js / Supabase</div>
+                        <h3 class="text-xl font-semibold mb-3">UniShare</h3>
+                        <p class="text-gray-400 mb-4">
+                            An educational resource sharing platform for university students. Allows students to share
+                            notes, study materials,
+                            past papers, and course insights with peers.
+                        </p>
+                        <div class="flex gap-3">
+                            <a href="#"
+                                class="bg-primary text-white py-2 px-4 rounded-lg text-sm transition hover:bg-opacity-90">View
+                                Project</a>
+                            <a href="https://github.com/nana-ntim/Unishare"
+                                class="border border-primary text-primary py-2 px-4 rounded-lg text-sm transition hover:bg-primary hover:bg-opacity-10">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FarmSafe Project -->
+                <div
+                    class="bg-card rounded-xl overflow-hidden shadow-xl transition-transform duration-300 hover:-translate-y-2">
+                    <img src="https://images.unsplash.com/photo-1625246333195-78d9c38ad449?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                        alt="FarmSafe Project" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="text-primary text-sm font-medium mb-2">React Native / TensorFlow / Python</div>
+                        <h3 class="text-xl font-semibold mb-3">FarmSafe</h3>
+                        <p class="text-gray-400 mb-4">
+                            An agricultural technology solution designed to help farmers monitor crop health, identify
+                            plant diseases,
+                            predict weather patterns, and optimize farming practices.
+                        </p>
+                        <div class="flex gap-3">
+                            <a href="https://www.youtube.com/watch?v=24pn_CPyFLo"
+                                class="bg-primary text-white py-2 px-4 rounded-lg text-sm transition hover:bg-opacity-90">YouTube
+                                Demo</a>
+                            <a href="https://github.com/nana-ntim/FarmSafe"
+                                class="border border-primary text-primary py-2 px-4 rounded-lg text-sm transition hover:bg-primary hover:bg-opacity-10">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section id="process" class="py-20 bg-card">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-16 relative">
+                My Development Process
+                <span
+                    class="absolute bottom-0 left-1/2 transform -translate-x-1/2 -mb-6 w-16 h-1 bg-primary rounded"></span>
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-8">
+                <div
+                    class="bg-dark rounded-xl p-8 text-center shadow-xl transition-transform duration-300 hover:-translate-y-2">
+                    <div
+                        class="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-6">
+                        1</div>
+                    <h3 class="text-xl font-semibold mb-4">Research & Planning</h3>
+                    <p class="text-gray-400">In-depth research and understanding of project requirements, defining
+                        scope, architecture and technical approach.</p>
+                </div>
+                <div
+                    class="bg-dark rounded-xl p-8 text-center shadow-xl transition-transform duration-300 hover:-translate-y-2">
+                    <div
+                        class="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-6">
+                        2</div>
+                    <h3 class="text-xl font-semibold mb-4">Design & Prototype</h3>
+                    <p class="text-gray-400">Creating wireframes, user flow diagrams, and interactive prototypes to
+                        visualize the application before development.</p>
+                </div>
+                <div
+                    class="bg-dark rounded-xl p-8 text-center shadow-xl transition-transform duration-300 hover:-translate-y-2">
+                    <div
+                        class="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-6">
+                        3</div>
+                    <h3 class="text-xl font-semibold mb-4">Development</h3>
+                    <p class="text-gray-400">Implementing the solution using best practices, clean code principles, and
+                        regular testing throughout the process.</p>
+                </div>
+                <div
+                    class="bg-dark rounded-xl p-8 text-center shadow-xl transition-transform duration-300 hover:-translate-y-2">
+                    <div
+                        class="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-6">
+                        4</div>
+                    <h3 class="text-xl font-semibold mb-4">Testing & Deployment</h3>
+                    <p class="text-gray-400">Thorough testing for functionality, performance, and usability, followed by
+                        deployment and ongoing maintenance.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tech Stack Section -->
+    <section id="tech-stack" class="py-20 bg-dark">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-16 relative">
+                My Tech Stack
+                <span
+                    class="absolute bottom-0 left-1/2 transform -translate-x-1/2 -mb-6 w-16 h-1 bg-primary rounded"></span>
+            </h2>
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 mt-8">
+                <div
+                    class="bg-card rounded-xl p-6 flex flex-col items-center justify-center text-center shadow-xl transition-transform duration-300 hover:-translate-y-2">
+                    <div class="text-4xl mb-4">≫</div>
+                    <h3 class="text-lg font-semibold">Flutter</h3>
+                </div>
+                <div
+                    class="bg-card rounded-xl p-6 flex flex-col items-center justify-center text-center shadow-xl transition-transform duration-300 hover:-translate-y-2">
+                    <div class="text-4xl mb-4">⚛</div>
+                    <h3 class="text-lg font-semibold">React</h3>
+                </div>
+                <div
+                    class="bg-card rounded-xl p-6 flex flex-col items-center justify-center text-center shadow-xl transition-transform duration-300 hover:-translate-y-2">
+                    <div class="text-4xl mb-4">☁</div>
+                    <h3 class="text-lg font-semibold">Supabase</h3>
+                </div>
+                <div
+                    class="bg-card rounded-xl p-6 flex flex-col items-center justify-center text-center shadow-xl transition-transform duration-300 hover:-translate-y-2">
+                    <div class="text-4xl mb-4">🔥</div>
+                    <h3 class="text-lg font-semibold">Firebase</h3>
+                </div>
+                <div
+                    class="bg-card rounded-xl p-6 flex flex-col items-center justify-center text-center shadow-xl transition-transform duration-300 hover:-translate-y-2">
+                    <div class="text-4xl mb-4">㏜</div>
+                    <h3 class="text-lg font-semibold">SQL</h3>
+                </div>
+                <div
+                    class="bg-card rounded-xl p-6 flex flex-col items-center justify-center text-center shadow-xl transition-transform duration-300 hover:-translate-y-2">
+                    <div class="text-4xl mb-4">🐍</div>
+                    <h3 class="text-lg font-semibold">Python</h3>
+                </div>
+                <div
+                    class="bg-card rounded-xl p-6 flex flex-col items-center justify-center text-center shadow-xl transition-transform duration-300 hover:-translate-y-2">
+                    <div class="text-4xl mb-4">☕</div>
+                    <h3 class="text-lg font-semibold">Java</h3>
+                </div>
+                <div
+                    class="bg-card rounded-xl p-6 flex flex-col items-center justify-center text-center shadow-xl transition-transform duration-300 hover:-translate-y-2">
+                    <div class="text-4xl mb-4">JS</div>
+                    <h3 class="text-lg font-semibold">TypeScript</h3>
+                </div>
+                <div
+                    class="bg-card rounded-xl p-6 flex flex-col items-center justify-center text-center shadow-xl transition-transform duration-300 hover:-translate-y-2">
+                    <div class="text-4xl mb-4">■</div>
+                    <h3 class="text-lg font-semibold">Node.js</h3>
+                </div>
+                <div
+                    class="bg-card rounded-xl p-6 flex flex-col items-center justify-center text-center shadow-xl transition-transform duration-300 hover:-translate-y-2">
+                    <div class="text-4xl mb-4">◆</div>
+                    <h3 class="text-lg font-semibold">MongoDB</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-card">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-16 relative">
+                Get In Touch
+                <span
+                    class="absolute bottom-0 left-1/2 transform -translate-x-1/2 -mb-6 w-16 h-1 bg-primary rounded"></span>
+            </h2>
+            <div class="flex flex-col md:flex-row justify-center gap-10 mt-12">
+                <div
+                    class="bg-dark rounded-xl shadow-xl p-10 flex-1 max-w-md mx-auto transition-transform duration-300 hover:-translate-y-2">
+                    <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" class="text-white"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M17 21V19C17 17.9391 16.5786 16.9217 15.8284 16.1716C15.0783 15.4214 14.0609 15 13 15H5C3.93913 15 2.92172 15.4214 2.17157 16.1716C1.42143 16.9217 1 17.9391 1 19V21"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                                d="M9 11C11.2091 11 13 9.20914 13 7C13 4.79086 11.2091 3 9 3C6.79086 3 5 4.79086 5 7C5 9.20914 6.79086 11 9 11Z"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                                d="M23 21V19C22.9993 18.1137 22.7044 17.2528 22.1614 16.5523C21.6184 15.8519 20.8581 15.3516 20 15.13"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                                d="M16 3.13C16.8604 3.35031 17.623 3.85071 18.1676 4.55232C18.7122 5.25392 19.0078 6.11683 19.0078 7.005C19.0078 7.89318 18.7122 8.75608 18.1676 9.45769C17.623 10.1593 16.8604 10.6597 16 10.88"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-center mb-4">Let's Connect</h3>
+                    <p class="text-gray-400 text-center mb-8">I'm available for freelance and full-time positions. Feel
+                        free to reach out if you'd like to work together.</p>
+                    <div class="space-y-4">
+                        <a href="mailto:aggyratusdemuitrus@gmail.com"
+                            class="block w-full bg-primary text-white py-3 px-4 rounded-lg text-center font-medium flex items-center justify-center hover:bg-opacity-90 transition duration-300 shadow-lg">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" class="mr-2"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4Z"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M22 6L12 13L2 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                            Email Me
+                        </a>
+                    </div>
+                </div>
+                <div class="hidden md:block w-[3px] bg-border h-auto self-stretch border-l-2 border-dotted"></div>
+                <div
+                    class="bg-dark rounded-xl shadow-xl p-10 flex-1 max-w-md mx-auto transition-transform duration-300 hover:-translate-y-2">
+                    <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" class="text-white"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M20 7H4C2.89543 7 2 7.89543 2 9V19C2 20.1046 2.89543 21 4 21H20C21.1046 21 22 20.1046 22 19V9C22 7.89543 21.1046 7 20 7Z"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                                d="M16 21V5C16 4.46957 15.7893 3.96086 15.4142 3.58579C15.0391 3.21071 14.5304 3 14 3H10C9.46957 3 8.96086 3.21071 8.58579 3.58579C8.21071 3.96086 8 4.46957 8 5V21"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-center mb-4">Social Profiles</h3>
+                    <p class="text-gray-400 text-center mb-8">Connect with me on social media or check out my work on
+                        code platforms.</p>
+                    <div class="grid grid-cols-2 gap-4">
+                        <a href="#"
+                            class="bg-dark border border-border text-white py-3 px-4 rounded-lg text-center font-medium flex items-center justify-center hover:border-primary transition duration-300">
+                            GitHub
+                        </a>
+                        <a href="#"
+                            class="bg-dark border border-border text-white py-3 px-4 rounded-lg text-center font-medium flex items-center justify-center hover:border-primary transition duration-300">
+                            LinkedIn
+                        </a>
+                        <a href="#"
+                            class="bg-dark border border-border text-white py-3 px-4 rounded-lg text-center font-medium flex items-center justify-center hover:border-primary transition duration-300">
+                            Twitter
+                        </a>
+                        <a href="#"
+                            class="bg-dark border border-border text-white py-3 px-4 rounded-lg text-center font-medium flex items-center justify-center hover:border-primary transition duration-300">
+                            Instagram
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-16 bg-dark border-t border-border">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col items-center">
+                <div class="text-3xl font-bold mb-6">DENIS AGGYRATUS</div>
+                <p class="text-gray-400 text-sm mb-6">Full Stack Developer & Flutter Specialist</p>
+                <div class="flex space-x-6 mb-8">
+                    <a href="#" class="text-gray-400 hover:text-primary transition-colors">GitHub</a>
+                    <a href="#" class="text-gray-400 hover:text-primary transition-colors">LinkedIn</a>
+                    <a href="#" class="text-gray-400 hover:text-primary transition-colors">Twitter</a>
+                    <a href="#" class="text-gray-400 hover:text-primary transition-colors">Instagram</a>
+                </div>
+                <p class="text-gray-400 text-sm">© 2025 Denis Aggyratus Demitrus. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
